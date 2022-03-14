@@ -16,7 +16,6 @@ model ModelName
     L2 <= 1000
     L3 <= 800
 
-
     maximise(L4)
 
   writeln("Begin running model")
