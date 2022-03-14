@@ -3,12 +3,15 @@ model ModelName
   ! uses "mminsight" ! uncomment this line for an Xpress Insight model
 
   declarations
+  
     V1, V2 : mpvar
+    
   end-declarations
+  
     V2 >= 60
     V1 <= 270
     V2 = (V1 + 30)/3
-    
+
     maximise(V2)
 
 
@@ -17,4 +20,5 @@ model ModelName
   writeln("V1= ", getsol(V1))
   writeln("V2 = ", getsol(V2))
   writeln("End running model")
+  
 end-model
