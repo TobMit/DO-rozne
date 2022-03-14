@@ -6,7 +6,8 @@
         "json()": {
             "meta": {
                 "accessList": [
-                    "tab3"
+                    "tab3",
+                    "tab5"
                 ]
             },
             "name": "pane1",
@@ -16,8 +17,7 @@
                     "name": "tab3",
                     "path": "",
                     "className": [
-                        "tab3",
-                        "focus"
+                        "tab3"
                     ],
                     "document": {
                         "changed": false,
@@ -29,7 +29,7 @@
                         "tooltip": "model.mos - Stopped",
                         "output": {
                             "id": "output922190",
-                            "width": 1010,
+                            "width": 1280,
                             "height": 268,
                             "config": {
                                 "runner": "Mosel",
@@ -37,6 +37,36 @@
                                 "debug": false,
                                 "toolbar": true,
                                 "name": ""
+                            }
+                        }
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab5",
+                    "path": "",
+                    "className": [
+                        "tab5"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1647285027753
+                        },
+                        "filter": true,
+                        "title": "T3-01-a.mos - Stopped",
+                        "tooltip": "T3-01-a.mos - Stopped",
+                        "output": {
+                            "id": "output842201",
+                            "width": 1280,
+                            "height": 268,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "T3-01-a.mos",
+                                "debug": false,
+                                "toolbar": true
                             }
                         }
                     },
@@ -55,7 +85,7 @@
             "@acestatus": 2,
             "@base-step-wizard": 2,
             "@divider": 5,
-            "@document": 5,
+            "@document": 7,
             "@editorswitch": 2,
             "@fico.vdl.attributes-panel": 1,
             "@fico.vdl.palette-panel": 1,
@@ -63,9 +93,9 @@
             "@menu": 6,
             "@menuitem": 15,
             "@pane": 2,
-            "@session": 5,
-            "@tab": 4,
-            "@undoManager": 5,
+            "@session": 7,
+            "@tab": 6,
+            "@undoManager": 7,
             "@welcome": 1
         }
     },
@@ -89,17 +119,17 @@
         "@installed": true
     },
     "od": {
-        "@last-run-config": "path:model.mos"
+        "@last-run-config": "path:T3-01-a.mos"
     },
     "panecycle": {
         "json()": [
-            "tab3",
-            "tab2"
+            "tab4",
+            "tab5"
         ]
     },
     "panels": {
         "@active-left": "tree",
-        "@active-right": "fico.om.sidebar",
+        "@active-right": "none",
         "commands.panel": {
             "@enabled": "false",
             "@name": "commands.panel"
@@ -160,9 +190,10 @@
     },
     "tabs": {
         "json()": {
-            "focus": "/model.mos",
+            "focus": "/T3-01-a.mos",
             "meta": {
                 "accessList": [
+                    "tab4",
                     "tab2",
                     "tab0"
                 ]
@@ -195,8 +226,7 @@
                     "name": "tab2",
                     "path": "/model.mos",
                     "className": [
-                        "tab2",
-                        "focus"
+                        "tab2"
                     ],
                     "document": {
                         "changed": false,
@@ -206,6 +236,27 @@
                         "filter": true,
                         "title": "model.mos",
                         "tooltip": "/model.mos",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab4",
+                    "path": "/T3-01-a.mos",
+                    "className": [
+                        "tab4",
+                        "focus"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1647285026441
+                        },
+                        "filter": true,
+                        "title": "T3-01-a.mos",
+                        "tooltip": "/T3-01-a.mos",
                         "ace": {}
                     },
                     "editorType": "ace",
