@@ -7,6 +7,8 @@
             "meta": {
                 "accessList": [
                     "tab3",
+                    "tab7",
+                    "tab6",
                     "tab5"
                 ]
             },
@@ -66,6 +68,68 @@
                                 "runner": "Mosel",
                                 "command": "T3-01-a.mos",
                                 "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        }
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab6",
+                    "path": "",
+                    "className": [
+                        "tab6"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1647285610894
+                        },
+                        "filter": true,
+                        "title": "T3-01-b.mos - Stopped",
+                        "tooltip": "T3-01-b.mos - Stopped",
+                        "output": {
+                            "id": "output629894",
+                            "width": 1280,
+                            "height": 268,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "T3-01-b.mos",
+                                "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        }
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab7",
+                    "path": "",
+                    "className": [
+                        "tab7"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1647286353711
+                        },
+                        "filter": true,
+                        "title": "T3-02-a.mos - Stopped",
+                        "tooltip": "T3-02-a.mos - Stopped",
+                        "output": {
+                            "id": "output321725",
+                            "width": 1280,
+                            "height": 268,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "T3-02-a.mos",
+                                "debug": false,
                                 "toolbar": true
                             }
                         }
@@ -85,7 +149,7 @@
             "@acestatus": 2,
             "@base-step-wizard": 2,
             "@divider": 5,
-            "@document": 7,
+            "@document": 10,
             "@editorswitch": 2,
             "@fico.vdl.attributes-panel": 1,
             "@fico.vdl.palette-panel": 1,
@@ -93,9 +157,9 @@
             "@menu": 6,
             "@menuitem": 15,
             "@pane": 2,
-            "@session": 7,
-            "@tab": 6,
-            "@undoManager": 7,
+            "@session": 10,
+            "@tab": 9,
+            "@undoManager": 10,
             "@welcome": 1
         }
     },
@@ -119,12 +183,12 @@
         "@installed": true
     },
     "od": {
-        "@last-run-config": "path:T3-01-a.mos"
+        "@last-run-config": "path:T3-02-a.mos"
     },
     "panecycle": {
         "json()": [
             "tab4",
-            "tab5"
+            "tab7"
         ]
     },
     "panels": {
@@ -190,7 +254,7 @@
     },
     "tabs": {
         "json()": {
-            "focus": "/T3-01-a.mos",
+            "focus": "/T3-02-a.mos",
             "meta": {
                 "accessList": [
                     "tab4",
@@ -244,7 +308,7 @@
                 {
                     "type": "tab",
                     "name": "tab4",
-                    "path": "/T3-01-a.mos",
+                    "path": "/T3-02-a.mos",
                     "className": [
                         "tab4",
                         "focus"
@@ -252,11 +316,11 @@
                     "document": {
                         "changed": false,
                         "meta": {
-                            "timestamp": 1647285026441
+                            "timestamp": 1647286486315
                         },
                         "filter": true,
-                        "title": "T3-01-a.mos",
-                        "tooltip": "/T3-01-a.mos",
+                        "title": "T3-02-a.mos",
+                        "tooltip": "/T3-02-a.mos",
                         "ace": {}
                     },
                     "editorType": "ace",
@@ -270,7 +334,7 @@
     },
     "tree_selection": {
         "json()": [
-            "/model.mos"
+            "/T3-01-b.mos"
         ]
     },
     "welcome": {
