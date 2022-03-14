@@ -6,7 +6,9 @@
         "json()": {
             "meta": {
                 "accessList": [
+                    "tab21",
                     "tab13",
+                    "tab19",
                     "tab15",
                     "tab9",
                     "tab7",
@@ -226,6 +228,69 @@
                                 "runner": "Mosel",
                                 "command": "T3-02-d.mos",
                                 "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        }
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab19",
+                    "path": "",
+                    "className": [
+                        "tab19"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1647291424140
+                        },
+                        "filter": true,
+                        "title": "T3-03-a.mos - Stopped",
+                        "tooltip": "T3-03-a.mos - Stopped",
+                        "output": {
+                            "id": "output785424",
+                            "width": 1280,
+                            "height": 268,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "T3-03-a.mos",
+                                "debug": false,
+                                "toolbar": true,
+                                "name": ""
+                            }
+                        }
+                    },
+                    "editorType": "output",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab21",
+                    "path": "",
+                    "className": [
+                        "tab21",
+                        "focus"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1647292169536
+                        },
+                        "filter": true,
+                        "title": "T3-03-b.mos - Stopped",
+                        "tooltip": "T3-03-b.mos - Stopped",
+                        "output": {
+                            "id": "output31625",
+                            "width": 1280,
+                            "height": 268,
+                            "config": {
+                                "runner": "Mosel",
+                                "command": "T3-03-b.mos",
+                                "debug": false,
                                 "toolbar": true
                             }
                         }
@@ -245,7 +310,7 @@
             "@acestatus": 2,
             "@base-step-wizard": 2,
             "@divider": 5,
-            "@document": 18,
+            "@document": 23,
             "@editorswitch": 2,
             "@fico.vdl.attributes-panel": 1,
             "@fico.vdl.palette-panel": 1,
@@ -253,9 +318,9 @@
             "@menu": 6,
             "@menuitem": 15,
             "@pane": 2,
-            "@session": 18,
-            "@tab": 17,
-            "@undoManager": 18,
+            "@session": 23,
+            "@tab": 22,
+            "@undoManager": 23,
             "@welcome": 1
         }
     },
@@ -280,12 +345,12 @@
         "@installed": true
     },
     "od": {
-        "@last-run-config": "path:T3-02-d.mos"
+        "@last-run-config": "path:T3-03-b.mos"
     },
     "panecycle": {
         "json()": [
-            "tab14",
-            "tab15"
+            "tab21",
+            "tab18"
         ]
     },
     "panels": {
@@ -340,7 +405,168 @@
         }
     },
     "recentfiles": {
-        "json()": []
+        "json()": [
+            {
+                "type": "tab",
+                "name": "tab11",
+                "path": "/T3-02-b.mos",
+                "className": [
+                    "tab11"
+                ],
+                "document": {
+                    "changed": false,
+                    "meta": {
+                        "timestamp": 1647287273324
+                    },
+                    "filter": true,
+                    "title": "T3-02-b.mos",
+                    "tooltip": "/T3-02-b.mos",
+                    "ace": {}
+                },
+                "editorType": "ace",
+                "active": false
+            },
+            {
+                "type": "tab",
+                "name": "tab2",
+                "path": "/model.mos",
+                "className": [
+                    "tab2"
+                ],
+                "document": {
+                    "changed": false,
+                    "meta": {
+                        "timestamp": 1647284185896
+                    },
+                    "filter": true,
+                    "title": "model.mos",
+                    "tooltip": "/model.mos",
+                    "ace": {}
+                },
+                "editorType": "ace",
+                "active": false
+            },
+            {
+                "type": "tab",
+                "name": "tab16",
+                "path": "/T3-02-c.mos",
+                "className": [
+                    "tab16"
+                ],
+                "document": {
+                    "changed": false,
+                    "meta": {
+                        "timestamp": 1647288502429
+                    },
+                    "filter": true,
+                    "title": "T3-02-c.mos",
+                    "tooltip": "/T3-02-c.mos",
+                    "ace": {}
+                },
+                "editorType": "ace",
+                "active": false
+            },
+            {
+                "type": "tab",
+                "name": "tab12",
+                "path": "/T3-02-c.mos",
+                "className": [
+                    "tab12"
+                ],
+                "document": {
+                    "changed": false,
+                    "meta": {
+                        "timestamp": 1647288476739
+                    },
+                    "filter": true,
+                    "title": "T3-02-c.mos",
+                    "tooltip": "/T3-02-c.mos",
+                    "ace": {}
+                },
+                "editorType": "ace",
+                "active": false
+            },
+            {
+                "type": "tab",
+                "name": "tab10",
+                "path": "/T3-01-b.mos",
+                "className": [
+                    "tab10"
+                ],
+                "document": {
+                    "changed": false,
+                    "meta": {
+                        "timestamp": 1647285597639
+                    },
+                    "filter": true,
+                    "title": "T3-01-b.mos",
+                    "tooltip": "/T3-01-b.mos",
+                    "ace": {}
+                },
+                "editorType": "ace",
+                "active": false
+            },
+            {
+                "type": "tab",
+                "name": "tab4",
+                "path": "/T3-02-b.mos",
+                "className": [
+                    "tab4"
+                ],
+                "document": {
+                    "changed": false,
+                    "meta": {
+                        "timestamp": 1647287182460
+                    },
+                    "filter": true,
+                    "title": "T3-02-b.mos",
+                    "tooltip": "/T3-02-b.mos",
+                    "ace": {}
+                },
+                "editorType": "ace",
+                "active": false
+            },
+            {
+                "type": "tab",
+                "name": "tab8",
+                "path": "/T3-01-b.mos",
+                "className": [
+                    "tab8"
+                ],
+                "document": {
+                    "changed": false,
+                    "meta": {
+                        "timestamp": 1647285597639
+                    },
+                    "filter": true,
+                    "title": "T3-01-b.mos",
+                    "tooltip": "/T3-01-b.mos",
+                    "ace": {}
+                },
+                "editorType": "ace",
+                "active": false
+            },
+            {
+                "type": "tab",
+                "name": "tab1",
+                "path": "/Ukazkovy priklad",
+                "className": [
+                    "tab1"
+                ],
+                "document": {
+                    "changed": false,
+                    "meta": {
+                        "timestamp": 1647283896258
+                    },
+                    "filter": true,
+                    "title": "Ukazkovy priklad",
+                    "tooltip": "/Ukazkovy priklad",
+                    "ace": {}
+                },
+                "editorType": "ace",
+                "active": false
+            }
+        ]
     },
     "search-history": {
         "searchfiles": {
@@ -351,9 +577,10 @@
     },
     "tabs": {
         "json()": {
-            "focus": "/T3-02-d.mos",
+            "focus": "/T3-03-b.mos",
             "meta": {
                 "accessList": [
+                    "tab18",
                     "tab14"
                 ]
             },
@@ -364,17 +591,37 @@
                     "name": "tab14",
                     "path": "/T3-02-d.mos",
                     "className": [
-                        "tab14",
+                        "tab14"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1647289372961
+                        },
+                        "filter": true,
+                        "title": "T3-02-d.mos",
+                        "tooltip": "/T3-02-d.mos",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab18",
+                    "path": "/T3-03-b.mos",
+                    "className": [
+                        "tab18",
                         "focus"
                     ],
                     "document": {
                         "changed": false,
                         "meta": {
-                            "timestamp": 1647288597102
+                            "timestamp": 1647292169002
                         },
                         "filter": true,
-                        "title": "T3-02-d.mos",
-                        "tooltip": "/T3-02-d.mos",
+                        "title": "T3-03-b.mos",
+                        "tooltip": "/T3-03-b.mos",
                         "ace": {}
                     },
                     "editorType": "ace",
@@ -388,7 +635,7 @@
     },
     "tree_selection": {
         "json()": [
-            "/T3-02-c.mos"
+            "/T3-02-b.mos"
         ]
     },
     "welcome": {
