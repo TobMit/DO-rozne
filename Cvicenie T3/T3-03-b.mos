@@ -1,0 +1,49 @@
+model ModelName
+  uses "mmxprs"
+  ! uses "mminsight" ! uncomment this line for an Xpress Insight model
+
+  declarations
+
+    X11,X12,X13,X14,
+    X21,X22,X23,X24,
+    X31,X32,X33,X34 : mpvar
+
+  end-declarations
+
+    X11 + X21 + X31 = 8
+    X12 + X22 + X32 = 6
+    X13 + X23 + X33 = 5
+    X14 + X24 + X34 = 7
+
+
+    X11 + X12 + X13 + X14 <= 15
+    X21 + X22 + X23 + X24 <= 20
+    X31 + X32 + X33 + X34 <= 18
+
+
+
+    minimise(1*X11 + 3*X12 + 5*X13 + 3*X14 +
+             5*X21 + 3*X22 + 2*X23 + 5*X24 +
+             3*X31 + 3*X32 + 6*X33 + 1*X34 )
+
+
+  writeln("Begin running model")
+  writeln("f = ", getobjval)
+  writeln("x11 = ", getsol(X11))
+  writeln("x12 = ", getsol(X12))
+  writeln("x13 = ", getsol(X13))
+  writeln("x14 = ", getsol(X14))
+  writeln("")
+  writeln("x21 = ", getsol(X21))
+  writeln("x22 = ", getsol(X22))
+  writeln("x23 = ", getsol(X23))
+  writeln("x24 = ", getsol(X24))
+  writeln("")
+  writeln("x31 = ", getsol(X31))
+  writeln("x32 = ", getsol(X32))
+  writeln("x33 = ", getsol(X33))
+  writeln("x34 = ", getsol(X34))
+
+  writeln("End running model")
+
+end-model
