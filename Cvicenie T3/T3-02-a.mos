@@ -1,0 +1,27 @@
+model ModelName
+  uses "mmxprs"
+  ! uses "mminsight" ! uncomment this line for an Xpress Insight model
+
+  declarations
+
+    L1, L2, L3 : mpvar
+
+
+  end-declarations
+    
+    L1 + L2 + L3 = 1
+    (30*L1 + 50*L2 + 80*L3) = 60 * (L1 + L2 + L3)
+    (9*L1 + 11*L2 + 16*L3) >= 12 * (L1 + L2 + L3)
+
+
+    minimise(11*L1 + 18*L2 + 25*L3)
+
+
+  writeln("Begin running model")
+  writeln("f = ", getobjval)
+  writeln("L1= ", getsol(L1))
+  writeln("L2 = ", getsol(L2))
+  writeln("L3 = ", getsol(L3))
+  writeln("End running model")
+
+end-model
