@@ -1,0 +1,21 @@
+model ModelName
+  uses "mmxprs"
+  ! uses "mminsight" ! uncomment this line for an Xpress Insight model
+
+  declarations
+    v1, v2 : mpvar
+  end-declarations
+
+  v1 <= 270
+  v2 >= 60
+  3*v2 = v1 + 30
+
+  maximise(v2)
+
+  writeln("Begin running model")
+  writeln("f=", getobjval)
+  writeln("v1=", getsol(v1))
+  writeln("v2=", getsol(v2))
+  writeln("End running model")
+  
+end-model
