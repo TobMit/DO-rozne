@@ -10,7 +10,8 @@ model ModelName
 
   2*x1 + 6*x2 <= 2100
   6*x1 + 5*x2 <= 2100
-  x1 <= 80
+  x1 >= 81
+  x2 <= 322
 
   minimise(-4*x1 - 5*x2)
   writeln("Begin running model")
