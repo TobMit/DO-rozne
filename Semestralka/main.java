@@ -11,11 +11,6 @@ public class main {
     private static  int b_C_A[][] = new int[n][3];
     private static Stack<Integer> indexSameCValue = new Stack<>();
 
-
-    // Primárna heuristika -> začína prípustným k lepšiemu prípustnému
-    // Môj prípad -> plný batoh (počet prvkov je väčší aj kapacita je väčšia ako r a K) -> zmenšovanie počtu prvkov a hmotnosť
-    // Nespracované dáta sú všetky v batohu -> lokálne krytérium: Vyber z batohu najväčší C
-
     public static void main(String[] args) throws FileNotFoundException {
         nacitajData();
         int plnyBatohHmotnost = spocitajHmotnostBatohu();
@@ -28,7 +23,7 @@ public class main {
         // počet prvkov v batohu
         int z = n;
 
-        System.out.printf("PocetPoloziek v batohu: %d\n", pocetPoloziekVBatohu());
+        System.out.printf("PocetPoloziek v batohu pred heuristikou: %d\n", pocetPoloziekVBatohu());
 
         // prípadne r + 1 keďže by sa mohlo stať že program skončí s 349 prvkami
         while (z >= r + 1) {
@@ -50,15 +45,19 @@ public class main {
         hodnotaFx = spocitajFx();
         System.out.printf("Plny batoh: Fx: %d\tHmotnost: %d\n", plnyBatohCena, plnyBatohHmotnost);
         System.out.printf("Heurestika: Fx: %d\tHmotnost: %d\n", hodnotaFx, spocitajHmotnostBatohu());
-        System.out.printf("PocetPoloziek v batohu: %d", pocetPoloziekVBatohu());
+        System.out.printf("PocetPoloziek v batohu po heuristike: %d", pocetPoloziekVBatohu());
 
     }
 
     private static void ulozData() throws FileNotFoundException {
         PrintWriter zapisovac = new PrintWriter(new File("vystup.csv"));
         zapisovac.println("sep=,"); // aby excel správne rozližil udaje do stlpcov
+        for (int i = 0; i < n; i++) {
+            if  (b_C_A[i][0] == 1) {
+                zapisovac.printf("%d,%d\n",b_C_A[i][1],b_C_A[i][2]);
+            }
+        }
         zapisovac.println("Vektor,C,A");
-
         for (int i = 0; i < n; i++) {
             zapisovac.printf("%d,%d,%d\n",b_C_A[i][0],b_C_A[i][1],b_C_A[i][2]);
         }
@@ -117,8 +116,8 @@ public class main {
     }
 
     private static void nacitajData() throws FileNotFoundException {
-        Scanner scannerC = new Scanner(new File("Semestralka/H4_c.txt"));
-        Scanner scannerA =  new Scanner(new File("Semestralka/H4_a.txt"));
+        Scanner scannerC = new Scanner(new File("H4_c.txt"));
+        Scanner scannerA =  new Scanner(new File("H4_a.txt"));
         int index  = 0;
         while (scannerC.hasNextInt() && scannerA.hasNext()) {
             b_C_A[index][0] = 1;
