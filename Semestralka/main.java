@@ -25,7 +25,7 @@ public class main {
 
         System.out.printf("PocetPoloziek v batohu pred heuristikou: %d\n", pocetPoloziekVBatohu());
 
-        // prípadne r + 1 keďže by sa mohlo stať že program skončí s 349 prvkami
+
         while (z >= r + 1) {
             if (indexSameCValue.isEmpty()){
                 napltStack();
