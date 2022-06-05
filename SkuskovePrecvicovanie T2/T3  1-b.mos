@@ -1,0 +1,19 @@
+model ModelName
+  options noimplicit
+  uses "mmxprs"
+
+  declarations
+    x1, x2, S:mpvar
+  end-declarations
+
+  (x1 + 30)/3 = x2
+  x1<= 270
+  x2 >= 60
+  S >= 3*x1 + 2*x2
+
+  minimise(S)
+
+  writeln("Begin running model")
+  writeln("f: ", getobjval)
+  writeln("End running model")
+end-model
