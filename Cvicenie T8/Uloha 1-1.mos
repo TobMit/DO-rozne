@@ -16,6 +16,6 @@ model ModelName
   writeln("Begin running model")
   writeln("f = ", getobjval)
   writeln("x1 = ", getsol(x1))
-  writeln("x2 = ", getsol(x1))
+  writeln("x2 = ", getsol(x2))
   writeln("End running model")
 end-model

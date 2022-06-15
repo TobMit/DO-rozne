@@ -11,13 +11,12 @@ model ModelName
   2*x1 + 6*x2 <= 2100
   6*x1 + 5*x2 <= 2100
   x1 >= 81
-  x2 >= 323
-  !nema riesenie
+  x2 <= 323
 
   minimise(-4*x1 - 5*x2)
   writeln("Begin running model")
   writeln("f = ", getobjval)
   writeln("x1 = ", getsol(x1))
-  writeln("x2 = ", getsol(x1))
+  writeln("x2 = ", getsol(x2))
   writeln("End running model")
 end-model

@@ -1,0 +1,48 @@
+model ModelName
+
+  options noimplicit
+  uses "mmxprs", "nlsolv"
+  ! uses "mminsight" ! uncomment this line for an Xpress Insight model
+
+  declarations
+    x1, x2: mpvar
+    status: string
+  end-declarations
+
+
+  2*x1 + 6*x2 <= 2100
+  6*x1 + 5*x2 <= 2100
+  x1 <= 80
+  x2 >= 324
+
+  minimise(-4*x1 - 5*x2)
+
+
+
+
+
+  writeln("Begin running model")
+  writeln("f = ", getobjval)
+  writeln("x1 = ", getsol(x1))
+  writeln("x2 = ", getsol(x2))
+  writeln("End running model")
+
+  procedure print_status
+   declarations
+    status: string
+   end-declarations
+
+   case getprobstat of
+    NL_OPT: status:="Solved"
+    NL_UNF: status:="Unfinished"
+    NL_INF: status:="Infeasible"
+    NL_UNB: status:="Unbounded"
+    NL_OTH: status:="Failed"
+    else status:="???"
+   end-case
+
+   writeln("Problem status: ", status)
+  end-procedure
+
+  print_status
+end-model
